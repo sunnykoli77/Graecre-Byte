@@ -90,9 +90,8 @@ a:hover {
 
 @container head (inline-size > 600px) {
     .Header img {
-        width: 37%;
+        width: 17%;
         height: auto;
-        border: 1px solid red;
     }
 }
 
