@@ -44,9 +44,6 @@ body {
     }
 }
 
-.Header img {
-    width: 30
-}
 
 *,
 *:before,
@@ -85,8 +82,8 @@ a:hover {
 }
 
 .Header img {
-  height: 100%;       /* Fill the full height of the .Header (120px) */
-  width: auto;        /* Maintain aspect ratio */
+  height: auto;       /* Fill the full height of the .Header (120px) */
+  width: 30px;        /* Maintain aspect ratio */
   display: block;     /* Prevent default inline spacing */
 }
 
