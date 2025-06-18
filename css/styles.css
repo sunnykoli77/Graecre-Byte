@@ -83,7 +83,8 @@ a:hover {
 
 .Header img {
     margin-left: 20px;
-    width: 500px;
+    width: 250px;
+    height: auto;
 }
 
 .Header img {
