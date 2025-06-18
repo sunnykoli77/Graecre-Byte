@@ -44,6 +44,11 @@ body {
     }
 }
 
+.Header {
+    display: flex;
+    align-items: center;
+}
+
 *,
 *:before,
 *:after {
