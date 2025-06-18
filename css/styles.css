@@ -74,6 +74,7 @@ a:hover {
     border: 1px solid #fff;
     background-color: #000000;
     margin: 0;
+    container: head/inline-size;
 }
 @media (min-width: 800px) {
     .Header {
@@ -85,6 +86,13 @@ a:hover {
     margin-left: 20px;
     width: 150px;
     height: auto;
+}
+
+@container main (inline-size > 600px) {
+    .Header img {
+        width: 37%;
+        height: auto;
+    }
 }
 
 .searchBar {
