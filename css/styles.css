@@ -88,7 +88,7 @@ a:hover {
     height: auto;
 }
 
-@container main (inline-size > 600px) {
+@container head (inline-size > 600px) {
     .Header img {
         width: 37%;
         height: auto;
