@@ -92,6 +92,7 @@ a:hover {
     .Header img {
         width: 37%;
         height: auto;
+        border: 1px solid red;
     }
 }
 
