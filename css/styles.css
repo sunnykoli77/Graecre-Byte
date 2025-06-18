@@ -83,7 +83,7 @@ a:hover {
 
 .Header img {
   height: auto;       /* Fill the full height of the .Header (120px) */
-  width: 25px;        /* Maintain aspect ratio */
+  width: 300px;        /* Maintain aspect ratio */
   display: block;     /* Prevent default inline spacing */
 }
 
