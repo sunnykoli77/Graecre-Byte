@@ -44,9 +44,8 @@ body {
     }
 }
 
-.Header {
-    display: flex;
-    align-items: center;
+.Header img {
+    width: 30
 }
 
 *,
@@ -84,6 +83,13 @@ a:hover {
         border-radius: 7px 7px 0 0;
     }
 }
+
+.Header img {
+  height: 100%;       /* Fill the full height of the .Header (120px) */
+  width: auto;        /* Maintain aspect ratio */
+  display: block;     /* Prevent default inline spacing */
+}
+
 
 .searchBar {
     position: relative;
