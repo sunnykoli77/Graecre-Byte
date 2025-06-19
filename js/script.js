@@ -13,3 +13,17 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
       viewDisplay.textContent = views;
     });
 });
+
+const slider = document.querySelector('.imageSlider');
+const images = slider.querySelectorAll('picture');
+let currentIndex = 0;
+
+function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    const offset = -currentIndex * 150; // 150px = image width
+    images.forEach((img) => {
+      img.style.transform = `translateX(${offset}px)`;
+    });
+}
+
+setInterval(showNextImage, 3000); // Change image every 3 seconds
