@@ -22,7 +22,11 @@ window.onload = function () {
 
     function showNextImage() {
       currentIndex = (currentIndex + 1) % images.length;
-      const offset = -currentIndex * 150;
+
+      // Get the width of the first image (assumes all are equal width)
+      const imageWidth = images[0].getBoundingClientRect().width;
+
+      const offset = -currentIndex * imageWidth;
       track.style.transform = `translateX(${offset}px)`;
     }
 
