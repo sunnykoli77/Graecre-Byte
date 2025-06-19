@@ -153,7 +153,7 @@ a:hover {
     width: 150px;
     height: auto;
     position: relative;
-    align-self: center;
+    margin-top: 5px;
 }
 
 .imageTrack {
