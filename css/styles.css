@@ -149,16 +149,19 @@ a:hover {
 }
 
 .imageSlider {
-  display: flex;
   overflow: hidden;
-  width: 150px; /* matches image width */
+  width: 150px;
   height: auto;
   position: relative;
 }
 
-.imageSlider picture {
-  min-width: 150px; /* match image width */
+.imageTrack {
+  display: flex;
   transition: transform 0.5s ease-in-out;
+}
+
+.imageTrack picture {
+  min-width: 150px;
 }
 
 .sectionImages {
@@ -166,6 +169,7 @@ a:hover {
   height: auto;
   display: block;
 }
+
 
 .myFoot {
     display: flex;
