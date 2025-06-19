@@ -155,6 +155,7 @@ a:hover {
     position: relative;
     margin-top: 15px;
     margin-left: 10px;
+    border-radius: 3px;
 }
 
 .imageTrack {
