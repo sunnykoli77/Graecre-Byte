@@ -162,11 +162,11 @@ a:hover {
 }
 
 .imageTrack picture {
-  min-width: 150px;
+  min-width: 250px;
 }
 
 .sectionImages {
-  width: 150px;
+  width: 250px;
   height: auto;
   display: block;
 }
