@@ -14,13 +14,18 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
     });
 });
 
-const track = document.querySelector('.imageTrack');
-const images = track.querySelectorAll('picture');
-let currentIndex = 0;
 
-function showNextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    const offset = -currentIndex * 150;
-    track.style.transform = `translateX(${offset}px)`;
-}
-setInterval(showNextImage, 3000);
+window.onload = function () {
+    const track = document.querySelector('.imageTrack');
+    const images = track.querySelectorAll('picture');
+    let currentIndex = 0;
+
+    function showNextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      const offset = -currentIndex * 150;
+      track.style.transform = `translateX(${offset}px)`;
+    }
+
+    setInterval(showNextImage, 3000);
+};
+
