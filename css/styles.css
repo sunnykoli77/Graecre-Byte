@@ -150,7 +150,7 @@ a:hover {
 
 .imageSlider {
     overflow: hidden;
-    width: 250px;
+    width: 150px;
     height: auto;
     position: relative;
     margin-top: 40px;
@@ -162,11 +162,11 @@ a:hover {
 }
 
 .imageTrack picture {
-  min-width: 250px;
+  min-width: 150px;
 }
 
 .sectionImages {
-  width: 250px;
+  width: 150px;
   height: auto;
   display: block;
 }
