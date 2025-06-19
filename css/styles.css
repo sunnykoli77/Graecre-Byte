@@ -150,10 +150,10 @@ a:hover {
 
 .imageSlider {
     overflow: hidden;
-    width: 150px;
+    width: 250px;
     height: auto;
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .imageTrack {
