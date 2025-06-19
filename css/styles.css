@@ -163,13 +163,14 @@ a:hover {
 }
 
 .imageTrack picture {
-  min-width: 180px;
+  min-width: 100%;
 }
 
 .sectionImages {
-  width: 180px;
+  width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 
