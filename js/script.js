@@ -14,16 +14,13 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
     });
 });
 
-const slider = document.querySelector('.imageSlider');
-const images = slider.querySelectorAll('picture');
+const track = document.querySelector('.imageTrack');
+const images = track.querySelectorAll('picture');
 let currentIndex = 0;
 
 function showNextImage() {
     currentIndex = (currentIndex + 1) % images.length;
-    const offset = -currentIndex * 150; // 150px = image width
-    images.forEach((img) => {
-      img.style.transform = `translateX(${offset}px)`;
-    });
+    const offset = -currentIndex * 150;
+    track.style.transform = `translateX(${offset}px)`;
 }
-
-setInterval(showNextImage, 3000); // Change image every 3 seconds
+setInterval(showNextImage, 3000);
