@@ -148,13 +148,24 @@ a:hover {
     }
 }
 
+.imageSlider {
+  display: flex;
+  overflow: hidden;
+  width: 150px; /* matches image width */
+  height: auto;
+  position: relative;
+}
+
+.imageSlider picture {
+  min-width: 150px; /* match image width */
+  transition: transform 0.5s ease-in-out;
+}
+
 .sectionImages {
   width: 150px;
   height: auto;
-  border-radius: 5px;
+  display: block;
 }
-
-
 
 .myFoot {
     display: flex;
