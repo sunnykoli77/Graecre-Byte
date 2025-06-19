@@ -15,19 +15,18 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
 });
 
 
-window.onload = function () {
-  document.querySelectorAll('.imageTrack').forEach((track) => {
-    const images = track.querySelectorAll('picture');
-    let currentIndex = 0;
+const track = document.querySelector('.imageTrack');
+const images = track.querySelectorAll('picture');
+let currentIndex = 0;
+const imageWidth = 250; // updated width
 
-    function showNextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      const offset = -currentIndex * 150;
-      track.style.transform = `translateX(${offset}px)`;
-    }
+function showNextImage() {
+  currentIndex = (currentIndex + 1) % images.length;
+  const offset = -currentIndex * imageWidth;
+  track.style.transform = `translateX(${offset}px)`;
+}
 
-    setInterval(showNextImage, 3000);
-  });
-};
+setInterval(showNextImage, 3000);
+
 
 
