@@ -16,7 +16,7 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
 
 
 window.onload = function () {
-    const track = document.querySelector('.imageTrack');
+  document.querySelectorAll('.imageTrack').forEach((track) => {
     const images = track.querySelectorAll('picture');
     let currentIndex = 0;
 
@@ -27,5 +27,7 @@ window.onload = function () {
     }
 
     setInterval(showNextImage, 3000);
+  });
 };
+
 
