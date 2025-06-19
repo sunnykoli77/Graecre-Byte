@@ -149,10 +149,11 @@ a:hover {
 }
 
 .imageSlider {
-  overflow: hidden;
-  width: 150px;
-  height: auto;
-  position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: auto;
+    position: relative;
+    align-self: center;
 }
 
 .imageTrack {
