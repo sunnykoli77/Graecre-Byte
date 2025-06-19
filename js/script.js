@@ -18,7 +18,7 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
 const track = document.querySelector('.imageTrack');
 const images = track.querySelectorAll('picture');
 let currentIndex = 0;
-const imageWidth = 250; // updated width
+const imageWidth = 180; // updated width
 
 function showNextImage() {
   currentIndex = (currentIndex + 1) % images.length;
