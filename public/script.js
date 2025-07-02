@@ -25,7 +25,6 @@ document.querySelectorAll("section[data-section-id]").forEach((section) => {
 });
 
 
-
 window.onload = function () {
   document.querySelectorAll('.imageTrack').forEach((track) => {
     const images = track.querySelectorAll('picture');
