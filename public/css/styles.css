@@ -1,0 +1,210 @@
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    --grad: linear-gradient(63deg, #262626 23%, transparent 23%) 7px 0,
+        linear-gradient(63deg, transparent 73%, #262626 76%),
+        linear-gradient(
+            63deg,
+            transparent 34%,
+            #262626 38%,
+            #262626 58%,
+            transparent 62%
+        ),
+        #222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 850px) {
+    body {
+        background: var(--grad);
+        background-size: 16px 48px;
+        background-color: #262c28;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+    border-radius: 7px;
+    background-image: url("img/triangle_bg.png");
+}
+@media (min-width: 800px) {
+    .container {
+        width: 70vw;
+        margin: 1px auto;
+    }
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline: 1px dashed #b50404;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+}
+a:hover {
+    color: skyblue;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+.Header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #fff;
+    background-color: #000000;
+    margin: 0;
+    container: head/inline-size;
+}
+@media (min-width: 800px) {
+    .Header {
+        border-radius: 7px 7px 0 0;
+    }
+}
+
+.Header img {
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+}
+
+@container head (inline-size > 600px) {
+    .Header img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+.searchBar {
+    position: relative;
+    overflow: hidden;
+    height: 27px;
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #fff;
+}
+.searchBar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), transparent);
+    z-index: 1;
+}
+
+.mainLayout {
+    padding: 20px;
+}
+
+.sectionOne {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(47, 47, 47);
+    padding: 0 20px;
+}
+
+.sectionBreak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(47, 47, 47);
+    padding: 0px 20px 20px 20px;
+}
+
+@media (min-width: 800px) {
+    .sectionBreak {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 80px;
+    }
+    .sectionBreak .textBlock {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.infoInfo {
+    font-size: 0.7rem;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 800px) {
+    .infoInfo {
+        display: none;
+    }
+}
+
+.imageSlider {
+    overflow: hidden;
+    width: 180px;
+    height: auto;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.imageTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.imageTrack picture {
+  min-width: 100%;
+}
+
+.sectionImages {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+.myFoot {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0 40px;
+    font-size: 0.8rem;
+}
+@media (min-width: 800px) {
+    .myFoot {
+        border-radius: 0 0 7px 7px;
+    }
+}
